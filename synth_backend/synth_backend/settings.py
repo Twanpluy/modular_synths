@@ -11,16 +11,20 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-
+import toml
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
+with open('synth_backend/config/config.toml') as f:
+    config = toml.load(f)
+
+sk = config['django']['SECRET_KEY']
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-3wee0o^dn(uck%rbw37*t72op9vq@_4b)d()o3@rpe%w0p_oyr'
+SECRET_KEY = sk
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

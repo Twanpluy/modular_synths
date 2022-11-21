@@ -6,3 +6,4 @@ synth_vue/src/
 synth_backend/settings/
 /synth_backend/__pycache__/
 synth_vue
+synth_backend/config/config.toml
