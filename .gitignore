@@ -1,9 +1,10 @@
 node_modules
 node_modules
-synth_vue/public/
-synth_vue/src/
 .venv
 synth_backend/settings/
 /synth_backend/__pycache__/
-synth_vue
 synth_backend/config/config.toml
+/home/twanpluy/modular_synth/synth_backend/synth_backend/config/config.toml
+synth_backend/synth_backend/config/config.toml
+synth_vue/src/assets/logo.png
+synth_vue/public/favicon.ico
