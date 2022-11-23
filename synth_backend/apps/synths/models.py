@@ -10,8 +10,8 @@ class Synths(models.Model):
     image = models.CharField(max_length=1000)
     description = models.CharField(max_length=1000)
     url = models.CharField(max_length=1000, blank=True)
-    create_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='synths')
-    create_at = models.DateTimeField(auto_now_add=True)
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='synths')
+    created_at = models.DateTimeField(auto_now_add=True)
     modified_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='+')
     modified_at = models.DateTimeField(auto_now=True)
     

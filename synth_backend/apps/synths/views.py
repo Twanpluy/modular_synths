@@ -10,5 +10,6 @@ class SynthViewSet(viewsets.ModelViewSet):
     serializer_class = SynthSerializer
     
     def get_queryset(self):
-        return self.get_queryset().filter(create_by=self.request.user)
+        return self.queryset.filter(created_by=self.request.user)
+
 

@@ -21,3 +21,5 @@ synth_backend/apps/synths/__pycache__/serializers.cpython-38.pyc
 synth_backend/apps/synths/__pycache__/urls.cpython-38.pyc
 synth_backend/apps/synths/__pycache__/views.cpython-38.pyc
 synth_backend/synth_backend/__pycache__/urls.cpython-38.pyc
+synth_backend/apps/synths/__pycache__/
+synth_backend/synth_backend/__pycache__/synth_backend/synth_backend/__pycache__/
