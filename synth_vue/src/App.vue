@@ -49,8 +49,6 @@ export default {
       this.$store.commit('initializeStore')
       const token = this.$store.state.token
 	  const test = this.$store.state.isAuthenticated
-	  console.log(token)
-	  console.log(test)
       if (token) {
         axios.defaults.headers.common['Authorization'] = "Token " + token
       } else {
@@ -82,7 +80,6 @@ export default {
 			}
 			}
 		)
-
 	}
   }
 }

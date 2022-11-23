@@ -43,7 +43,7 @@
                 >Remember me</label
               >
             </div>
-            <router-link to="/forgotpassword" class="text-gray-800">Forgot password</router-link>
+            <router-link to="/resetpassword" class="text-gray-800">Forgot password</router-link>
           </div>
 
           <div class="text-center lg:text-left">
@@ -90,7 +90,6 @@ import axios from 'axios';
         },
         methods: {
           async submitForm(e){
-            console.log("submitting form");
             axios.defaults.headers.common['Authorization'] = ""
 
             localStorage.removeItem('token')
