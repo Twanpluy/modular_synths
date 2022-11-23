@@ -4,6 +4,7 @@ import LogIn from '../views/users/LogIn.vue'
 import SignUp from '../views/users/SignUp.vue'
 import resetpassword from '../views/users/resetpassword.vue'
 import Home from '../views/home.vue'
+import synthList from '../views/synths/synthList.vue'
 const routes = [
   {
     path: '/login',
@@ -25,6 +26,15 @@ const routes = [
     name: 'resetpassword',
     component: resetpassword
   },
+  // synth pages
+  {
+    path: '/synthlist',
+    name: 'synthlist',
+    component: synthList
+  },
+
+
+
   {
     // path: '/about',
     // name: 'about',
