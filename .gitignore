@@ -17,3 +17,7 @@ synth_backend/apps/synths/migrations/0001_initial.py
 synth_backend/apps/synths/migrations/__pycache__/__init__.cpython-38.pyc
 synth_backend/apps/synths/migrations/__pycache__/0001_initial.cpython-38.pyc
 synth_backend/synth_backend/__pycache__/settings.cpython-38.pyc
+synth_backend/apps/synths/__pycache__/serializers.cpython-38.pyc
+synth_backend/apps/synths/__pycache__/urls.cpython-38.pyc
+synth_backend/apps/synths/__pycache__/views.cpython-38.pyc
+synth_backend/synth_backend/__pycache__/urls.cpython-38.pyc
