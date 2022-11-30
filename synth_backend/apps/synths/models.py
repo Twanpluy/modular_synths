@@ -19,3 +19,31 @@ class Synths(models.Model):
     
     def __str__(self):
         return self.name , self.brand
+    
+    
+class Ebay_Synths(models.Model):
+    item_id = models.CharField(max_length=1000)
+    synth_id = models.ForeignKey(Synths, on_delete=models.CASCADE, related_name='ebay_synths')
+    title = models.CharField(max_length=1000)
+    categoryname = models.CharField(max_length=1000)
+    selling_status = models.CharField(max_length=1000)
+    cost = models.CharField(max_length=1000)
+    item_currency = models.CharField(max_length=1000)
+    shipping_cost = models.CharField(max_length=1000)      
+    shipping_to = models.CharField(max_length=1000)  
+    shipping_currency = models.CharField(max_length=1000)
+    condition = models.CharField(max_length=1000)
+    location = models.CharField(max_length=1000)
+    country = models.CharField(max_length=1000)
+    watcher_count = models.CharField(max_length=1000)
+    url = models.CharField(max_length=1000)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
